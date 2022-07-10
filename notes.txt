@@ -1,0 +1,53 @@
+install vue js
+    install vue CLI : npm install -g @vue/cli
+    check installed or not : vue --version
+    make project with cli : vue create projectName
+    run project: npm run serve
+
+Start with code and make a component:
+    install vetur extension for vue code readability
+    make a "Home" component in the components section
+    every component must contain a template and script
+        template for html
+        script for exporting component and defining props
+        in the App file, import the component and use it
+
+Click event
+    define method property: it holds all the functions we want to create 
+    define function in method property
+    make button and click :v-on:click="functionName"
+    how to pass params with event: v-on:click="functionName("parameters")"
+      this parameters will be catched by the function
+
+conditional rendering
+    define data function
+    use if directive : v-if and v-else
+    make button and apply conditional with button Click
+
+for-loop conditional
+    make data function
+    define an array of objects
+    make an HTML table 
+    use v-for directive for loop
+
+composition with components in vue js
+    child component inside main component
+
+template in vue js
+    template provide some extra features
+    {{...}} -->templates
+    v-bind:diables="disableBtn"
+    inside data()
+    {
+        return{
+            disableBtn=true
+        }
+    }
+
+Data binding: sync between dom and vue component
+
+
+router-view : to display the content of the page
+router-link : used in place of anchor tag, to change the content without refreshing the page
+
+data is transferred from parent to child using props
